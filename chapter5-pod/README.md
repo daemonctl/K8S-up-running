@@ -18,4 +18,4 @@ cd chapter5-pod
 
 ## You can see dashboard via browser
 
-![] (images/mykuard.png)
+![](images/mykuard.png)
