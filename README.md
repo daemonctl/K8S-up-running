@@ -9,4 +9,4 @@ git clone https://github.com/khergner/K8S-up-running.git
 
 - [x] chapter5; you can create kuard pods
 
-- [] chapter6; loading..
+- [x] chapter6; loading..
