@@ -1,25 +1,26 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mykuard-chapter5
+  name: mykuard
   labels:
-    name: mykuard-chapter5
+    name: kuard
+    app: blue
+    env: test
 spec:
   volumes:
-    - name:  "data-kuard"
-      hostPath:
-        path:  "/data"
-        type: Directory
+    - name: kuard-data
+      persistentVolumeClaim:
+        claimName: pvc-local
   containers:
-  - name: kuard-container
-    image: kherguner/kuard:latest
+  - name: kuard-blue
+    image: gcr.io/kuar-demo/kuard-amd64:blue
     ports:
       - containerPort: 8080
         name: http
         protocol: TCP
     volumeMounts:
-      - name:  "data-kuard"
-        mountPath: "/data"
+      - name: kuard-data
+        mountPath: /test
     resources:
       requests:
         cpu: "250m"

@@ -1,0 +1,12 @@
+# depo alaninin hedefe baglanmasi
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc-local
+spec:
+  storageClassName: local-db
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi

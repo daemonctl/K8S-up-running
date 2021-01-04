@@ -2,10 +2,15 @@
 
 ------------------------------------------------------------------------
 ```
-cd chapter5-pod
+cd pod-volumes
+You have to file path "/home/docker/pod-volume" via worker node 
 ```
 
 **How can ı deploy on minikube**
+- [x] kubectl apply -f pv.yaml
+
+- [x] kubectl apply -f pvc.yaml
+
 - [x] kubectl apply -f kuard-pod.yaml
 
 - [x] kubectl get pods -w to new terminal

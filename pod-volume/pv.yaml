@@ -1,0 +1,15 @@
+# depo alaninin saglanmasi
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-local
+  labels:
+    type: local
+spec:
+  storageClassName: local-db
+  capacity:
+    storage: 100Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /home/docker/pod-volume
