@@ -1,21 +1,19 @@
 # Kubernetese kuard pod create via minikube
 
-------------------------------------------------------------------------
-```
 First step
-    > minikube start
+> minikube start
 
-    > minikube dashboard
+> minikube dashboard
 
 If you want to follow pod or other resource types creation, you can use the command below.
-    > kubectl get pod -w --show-labels
+>kubectl get pod -w --show-labels
 
-    > kubectl get rd -w
+>kubectl get rd -w
 
-    > kubectl get service -w
+>kubectl get service -w
+    
+it's ready to deploy! :point_down:
 
-    it's ready to deploy! :shipit:
-```
 
 **How can ı deploy kuard blue and green on minikube**
 - [x] kubectl create -f kuard-bandicoot-pod.yaml
