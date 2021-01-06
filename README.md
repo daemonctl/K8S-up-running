@@ -7,6 +7,6 @@ git clone https://github.com/khergner/K8S-up-running.git
 
 **Appendix**
 
-- [x] chapter5; you can create kuard pods
+- [x] Pod-Volume = Pod create, Data retention (Persistent Volume & Persistent Volume Claim) 
 
-- [x] chapter6; loading..
+- [x] Service = You can create pod, replicasets and services
