@@ -1,0 +1,13 @@
+#minikube tunnel,load balancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: star-wars-service
+spec:
+  type: NodePort
+  selector:
+    app: star-wars-replicaset
+  ports:
+  - port: 3000
+    nodePort: 30001
+    targetPort: 3000

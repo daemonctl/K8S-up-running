@@ -1,4 +1,4 @@
-# Kubernetese kuard pod create via minikube
+# Kubernetes kuard pod create via minikube
 
 First step
 > minikube start

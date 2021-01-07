@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: star-wars-replicaset
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: star-wars-replicaset
+  template:
+    metadata:
+      name: star-wars-replicaset
+      labels:
+        app: star-wars-replicaset
+        env: test
+    spec:
+      containers:
+        - name: star-wars-replicaset
+          image: kherguner/k8s_up_running:npm
+          ports:
+          - containerPort: 3000
