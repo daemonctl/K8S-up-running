@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootstrap
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bootstrap
+  template:
+    metadata:
+      labels:
+        app: bootstrap
+    spec:
+      containers:
+        - name: ingress
+          image: kherguner/k8s_up_running:ingress
+          ports:
+            - name: ui
+              containerPort: 3000

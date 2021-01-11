@@ -19,3 +19,10 @@ spec:
           image: kherguner/k8s_up_running:npm
           ports:
           - containerPort: 3000
+          resources:
+              requests:
+                cpu: "0.1"
+                memory: "128Mi"
+              limits:
+                cpu: "0.3"
+                memory: "256Mi"

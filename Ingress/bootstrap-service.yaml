@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: bootstrap-service
+spec:
+  selector:
+    app: bootstrap
+  ports:
+    - name: ui
+      port: 80
+      targetPort: 3000
+      protocol: TCP

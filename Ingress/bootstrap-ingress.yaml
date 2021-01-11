@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bootstrap-ingress
+spec:
+  rules:
+    - host: bootstrap.k8s.test
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bootstrap-service
+                port:
+                  number: 80
