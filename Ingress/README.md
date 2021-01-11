@@ -52,4 +52,4 @@ My linkedin profile **[Korhan Herguner](https://www.linkedin.com/in/korhan-hergu
 
 ## Copyright and License
 
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE) license.
+Copyright 2020 khergner. Code released under the [MIT](https://github.com/khergner/K8S-up-running/blob/master/Ingress/LICENSE) license.
