@@ -18,6 +18,8 @@ Thank you davidtmiller for source code
 
 > minikube tunnel
 
+> You have to added minikube ip | bootstrap.k8s.test  --> "C:\Windows\System32\drivers\etc\hosts"
+
 ```
 git clone https://github.com/StartBootstrap/startbootstrap-agency.git
 ```
