@@ -1,4 +1,4 @@
-# Kubernetese kuard pod create via minikube
+# Kubernetese workshop via minikube
 
 ------------------------------------------------------------------------
 ```
