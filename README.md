@@ -15,7 +15,7 @@ git clone https://github.com/khergner/K8S-up-running.git
 
 - [x] Service = You can create pod, replicasets and services
 
-- Demonstration = This section contains sample K8S projects. 
+- Demonstration = This section contains sample K8S projects in Demo folder. 
 
   - Nginx Demonstration = I'd like to deploy kubernetes cluster after my aim to create dockerfile for nginx project. Let's Demonstrate :technologist:
   - Nginx Ingress  = You can use DNS for access Let's Demonstrate :technologist:
