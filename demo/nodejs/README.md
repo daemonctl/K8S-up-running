@@ -19,9 +19,13 @@ it's ready to deploy! :point_down:
 
 - [x] kubectl create -f starwars-service.yaml
 
+- [x] kubectl create -f starwars-ingress.yaml
+
 
 **How can ı generate url**
 - [x] minikube service starwars-service
+
+- [x] starwars.k8s.com on browser
 
 You can see dashboard via browser @octocat :+1:
 
