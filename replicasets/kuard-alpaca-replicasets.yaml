@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: alpaca-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: alpaca-replicaset
+  template:
+    metadata:
+      labels:
+        app: alpaca-replicaset
+    spec:
+      containers:
+      - name: alpaca-kuard
+        image: gcr.io/kuar-demo/kuard-amd64:blue
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080

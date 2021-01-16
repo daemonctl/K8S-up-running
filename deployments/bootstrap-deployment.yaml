@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootstrap-test
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bootstrap-dep
+  template:
+    metadata:
+      labels:
+        app: bootstrap-dep
+    spec:
+      containers:
+      - name: ingress
+        image: kherguner/k8s_up_running:ingress
+        ports:
+          - name: ui
+            containerPort: 3000
+        resources: 
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "150m"
+            memory: "256Mi"
+              
