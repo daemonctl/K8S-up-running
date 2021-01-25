@@ -1,0 +1,12 @@
+# depo alaninin hedefe baglanmasi
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: jenkins-pvc
+spec:
+  storageClassName: jenkins-db
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi

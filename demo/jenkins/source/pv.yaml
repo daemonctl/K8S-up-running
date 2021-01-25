@@ -1,0 +1,15 @@
+# depo alaninin saglanmasi
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jenkins-pv
+  labels:
+    type: test
+spec:
+  storageClassName: jenkins-db
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /home/docker/jenkins-volume

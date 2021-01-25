@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-ci
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins-ci
+  template:
+    metadata:
+      labels:
+        app: jenkins-ci
+    spec:
+      containers:
+      - name: jenkins
+        image: kherguner/k8s_up_running:jenkins
+        imagePullPolicy: Always
+        ports:
+        - name:  http
+          containerPort: 8080
+        - name: jnlp
+          containerPort: 50000
+        volumeMounts:
+          - name: jenkins-vol
+            mountPath: /var/jenkins_home
+        resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 1Gi
+      volumes:
+        - name: jenkins-vol
+          persistentVolumeClaim:
+            claimName: jenkins-pvc

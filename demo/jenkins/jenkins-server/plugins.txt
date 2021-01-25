@@ -1,0 +1,9 @@
+ssh-credentials:1.18.1
+workflow-aggregator:2.6
+kubernetes:1.28.5
+docker-workflow:1.25
+git-client:3.6.0
+git:4.5.2
+git-parameter:0.9.13
+maven-plugin:3.8
+workflow-job:2.40

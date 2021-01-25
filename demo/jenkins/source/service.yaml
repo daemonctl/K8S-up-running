@@ -1,0 +1,25 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: jenkins-http
+spec:
+  selector:
+    app: jenkins-ci
+  type: NodePort
+  ports:
+  - name: http
+    port:  8787
+    targetPort:  8080
+    nodePort: 30081
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: jenkins-jnlp
+spec:
+  selector:
+    app: jenkins-ci
+  ports:
+  - name: jnlp
+    port:  50001
+    targetPort:  50000
