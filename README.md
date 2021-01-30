@@ -4,6 +4,9 @@
 ```
 git clone https://github.com/khergner/K8S-up-running.git
 ```
+## Minikube Auto Start & Stop
+
+- if you want to start minikube, you can use sh ministart.sh 1 or will be stop sh ministart.sh 0  
 
 **Appendix**
 

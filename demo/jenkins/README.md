@@ -86,7 +86,7 @@ pipeline {
                spec:
                  containers:
                  - name: shell
-                   image: jenkins/jnlp-agent-maven:jdk11
+                   image: kherguner/jenkins-slave-java-maven:3.6.3
                    command:
                    - sleep
                    args:

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kuardingress
+spec:
+  rules:
+  - host: kuard.info.cm
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: kuard-config
+            port:
+              number: 8091
