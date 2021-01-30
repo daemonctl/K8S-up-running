@@ -77,6 +77,7 @@ git clone https://github.com/khergner/kubernetes-java-hellokubernetes.git
 *If you want to use declarative syntax*
 
 ```
+
 pipeline {
     agent {
         kubernetes {
@@ -108,16 +109,17 @@ pipeline {
             sh 'mvn clean install'
          }
       }
-	  stage('Compile') {
+   stage('Compile') {
          steps {
             sh ' java -jar target/hello-kubernetes-1.0.0.jar'
          }
       }
-	}
+ }
 }
 ```
 
 **How can ı generate url**
+
 - [x] minikube ip | jenkins.k8s.test --> "C:\Windows\System32\drivers\etc\hosts"
 
 You can see dashboard via browser @octocat :+1:
